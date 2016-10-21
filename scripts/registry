@@ -1,0 +1,8 @@
+#!/bin/bash
+
+docker run --name=registry \
+  -it \
+  -d --restart=always \
+  -p 80:5000 \
+  -v /data/registry:/var/lib/registry \
+  registry:2

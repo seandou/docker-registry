@@ -1,0 +1,7 @@
+#!/bin/bash
+
+docker run --name=registry-test \
+  --rm -it \
+  -p 80:5000 \
+  -v /data/registry:/var/lib/registry \
+  registry:2
